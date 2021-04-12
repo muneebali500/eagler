@@ -1,0 +1,68 @@
+#about {
+  padding: 6rem 0;
+  position: relative;
+  @include flex-center(row);
+  background-color: $color-section-bacground-2;
+  overflow: hidden;
+}
+
+.about {
+  &__container {
+    width: 54rem;
+    max-width: 95%;
+  }
+
+  &__text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    opacity: 0;
+    transform: translateX(10rem);
+
+    @media only screen and (max-width: 62.5em) {
+      text-align: justify;
+      padding: 0 6rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: orange;
+
+    @media only screen and (max-width: 62.5em) {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    span {
+      color: rgba(240, 0, 0, 1);
+    }
+  }
+
+  &__image {
+    height: 25rem;
+    width: 25rem;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    margin-right: 1.5rem;
+    filter: hue-rotate(220deg);
+    opacity: 0;
+    transform: translateX(-10rem);
+
+    @media only screen and (max-width: 62.5em) {
+      display: none;
+    }
+  }
+}
+
+//////////////////////////////
+////// About scroll transition
+.aboutAnimate {
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateX(0);
+}

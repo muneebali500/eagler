@@ -1,0 +1,41 @@
+#contact {
+  padding: 4rem 6rem;
+  background-color: $color-section-bacground-1;
+}
+
+.contact {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    opacity: 0;
+  }
+
+  &__address {
+    @include flex-center(column);
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      align-self: flex-start;
+    }
+  }
+
+  &__img {
+    width: 2.2rem;
+    filter: hue-rotate(200deg);
+  }
+
+  &__detail {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.contactAnimate {
+  transition: 0.5s;
+  opacity: 1;
+}

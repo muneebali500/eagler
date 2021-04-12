@@ -1,0 +1,93 @@
+#services {
+  min-height: 100vh;
+  background-color: $color-section-bacground-1;
+  padding: 3rem 4vmax;
+  overflow-y: hidden;
+}
+
+.services {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    @media only screen and (max-width: 68.75em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 46.875em) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__box {
+    border: 4px solid orange;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    opacity: 0;
+    transform: translateY(30rem);
+
+    &--2 {
+      margin: 3rem 0;
+      @media only screen and (max-width: 68.75em) {
+        margin-top: 10rem;
+      }
+      @media only screen and (max-width: 46.875em) {
+        margin-top: 4rem;
+        margin-bottom: 14rem;
+      }
+    }
+
+    &--3 {
+      @media only screen and (max-width: 68.75em) {
+        margin-top: -10rem;
+        margin-bottom: 3rem;
+      }
+      @media only screen and (max-width: 46.875em) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  &__img {
+    @include position-center;
+    height: 9rem;
+    width: 9rem;
+  }
+
+  &__name {
+    width: 108%;
+    position: absolute;
+    bottom: 0;
+    left: -4%;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    transform: translateY(50%);
+    background-color: orange;
+    border-radius: 0.3rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  &__detail {
+    position: relative;
+    z-index: 5;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.6rem;
+    height: 100%;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+.serviceAnimate {
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}

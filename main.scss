@@ -1,0 +1,73 @@
+//////////////////////////////////////
+//////// COLORS
+$color-primary: rgba(255, 166, 0, 0.925);
+$color-secondary: rgba(240, 0, 0, 0.7);
+$color-section-bacground-1: rgba(240, 240, 240, 0.2);
+$color-section-bacground-2: rgba(200, 200, 200, 0.2);
+
+///////////////////////////////////////
+//////// MIXINS
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+///////////////////////////////////////
+/////// Global Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  color: #aaa;
+  line-height: 1.7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: 100% 100%;
+  object-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+figure {
+  width: 10rem;
+  height: 10rem;
+}
+
+///////////////////////////////////////
+//////// SPECIFIC STYLES
+
+@import "./sass/about";
+@import "./sass/contact";
+@import "./sass/header";
+@import "./sass/footer";
+@import "./sass/navigation";
+@import "./sass/portfolio";
+@import "./sass/services";
+@import "./sass/typography";

@@ -1,0 +1,110 @@
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(200, 100, 0, 0.8), rgba(200, 100, 0, 0.6)),
+    url(../../img/backgroundimg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.1px solid;
+}
+
+.header {
+  &__content {
+    height: 50vh;
+    margin: 15rem 6rem 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 3rem;
+
+    @media only screen and (max-width: 56.25em) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 5rem;
+      margin: 11rem 4rem 0;
+    }
+
+    & > * {
+      width: 40rem;
+    }
+  }
+
+  &__title {
+    font-size: 4.7vmax;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: -4rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+
+    @media only screen and (max-width: 56.25em) {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 2.2;
+    }
+
+    span {
+      display: block;
+      margin-top: -1.5rem;
+    }
+
+    i {
+      color: $color-primary;
+    }
+  }
+
+  &__image {
+    margin-right: -4rem;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 22rem;
+      border: 1px solid;
+      border-radius: 3px;
+      margin-left: -3.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      filter: hue-rotate(20deg);
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    font-size: 2.2vmax;
+    padding: 0 2.2rem;
+    border-radius: 5rem;
+    color: #fff;
+    border: none;
+    background-color: $color-primary;
+    box-shadow: 0 0.2rem 0rem rgba(255, 140, 0, 0.7);
+    margin-top: 1rem;
+    font-family: "Pacifico", cursive;
+    transition: transform 0.3s;
+    outline: none;
+
+    @media only screen and (max-width: 56.25em) {
+      position: absolute;
+      bottom: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      @media only screen and (max-width: 56.25em) {
+        transform: translateX(-50%) scale(1.1);
+      }
+    }
+
+    &:active {
+      transform: scale(0.8);
+
+      @media only screen and (max-width: 56.25em) {
+        transform: translateX(-50%) scale(0.8);
+      }
+    }
+  }
+}
