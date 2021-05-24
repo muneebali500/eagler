@@ -24,6 +24,10 @@ header {
       margin: 11rem 4rem 0;
     }
 
+    @media only screen and (max-width: 25em) {
+      margin-top: 13rem;
+    }
+
     & > * {
       width: 40rem;
     }
@@ -44,7 +48,7 @@ header {
     }
 
     @media only screen and (max-width: 25em) {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     span {
@@ -66,6 +70,10 @@ header {
       border-radius: 3px;
       margin-left: -3.5rem;
       margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 15rem;
     }
 
     img {
@@ -93,6 +101,10 @@ header {
       left: 50%;
       transform: translateX(-50%);
       font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      bottom: 0;
     }
 
     &:hover {

@@ -24,6 +24,10 @@
       padding: 1.5rem 0;
     }
 
+    @media only screen and (max-width: 25em) {
+      height: 20rem;
+    }
+
     &:hover > div {
       animation-play-state: paused;
     }
