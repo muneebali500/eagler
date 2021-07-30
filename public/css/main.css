@@ -294,7 +294,7 @@ header {
 
 .header__btn {
   font-size: 2.2vmax;
-  padding: 0 4rem;
+  padding: 0 1rem;
   border-radius: 5rem;
   color: #fff;
   border: none;
@@ -370,7 +370,7 @@ header {
 }
 
 .nav__logo {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: #fff;
   padding-left: 6rem;
 }
@@ -436,7 +436,7 @@ header {
 
 .nav__btn {
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   right: 2rem;
   height: 3.5rem;
   width: 3.5rem;
