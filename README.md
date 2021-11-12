@@ -26,7 +26,7 @@ This is a Frontend Development project Designed and Developed by me using HTML, 
 
 The project was developed using VS Code editor and its integrated version control feature to commit gits, which are then pushed to GitHub in order to store the codes remotely.
 
-### Netlify
+#### Netlify
 
 The project was deployed to Netlify
 
