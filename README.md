@@ -6,7 +6,7 @@ This is a Frontend Development project Designed and Developed by me using HTML, 
 
 [Link to Live Project](https://eagler.netlify.app/)
 
-![eagler website](/public/eagler.png)
+![eagler website](/img/eagler.png)
 
 ## Technologies Used
 
