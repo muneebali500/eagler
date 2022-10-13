@@ -167,7 +167,7 @@ figure {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(200, 100, 0, 0.8), rgba(200, 100, 0, 0.6)),
-    url(../../img/backgroundimg1.jpg);
+    url(../img/backgroundimg1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
