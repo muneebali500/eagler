@@ -6,30 +6,45 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   border-top: 0.1px solid;
+  position: relative;
+
+  @media only screen and (max-width: 1300px) {
+    min-height: 35rem;
+  }
+
+  @media only screen and (max-width: 950px) {
+    min-height: 28rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    min-height: 19rem;
+  }
 }
 
 .header {
   &__content {
-    height: 50vh;
-    margin: 15rem 6rem 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    position: relative;
-    padding-bottom: 3rem;
+    width: 72.5rem;
+    max-width: 92%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    margin: 3rem auto 0;
 
-    @media only screen and (max-width: 56.25em) {
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding-bottom: 5rem;
-      margin: 11rem 4rem 0;
+    @media only screen and (max-width: 950px) {
+      margin: 4rem auto 0;
+      line-height: 5.5rem;
     }
 
-    @media only screen and (max-width: 25em) {
-      margin-top: 13rem;
-    }
-
-    & > * {
-      width: 40rem;
+    @media only screen and (max-width: 650px) {
+      grid-template-columns: none;
+      justify-items: center;
+      text-align: center;
+      line-height: 3.5rem;
+      top: 50%;
     }
   }
 
@@ -41,14 +56,13 @@ header {
     font-family: "Pacifico", cursive;
     font-weight: 300;
 
-    @media only screen and (max-width: 56.25em) {
-      text-align: center;
-      font-size: 2.5rem;
-      line-height: 2.2;
+    @media only screen and (max-width: 950px) {
+      font-size: 2.4rem;
     }
 
-    @media only screen and (max-width: 25em) {
-      font-size: 1.5rem;
+    @media only screen and (max-width: 650px) {
+      font-size: 2rem;
+      line-height: 4rem;
     }
 
     span {
@@ -61,66 +75,38 @@ header {
     }
   }
 
-  &__image {
-    margin-right: -4rem;
+  &__btn {
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    border-radius: 5rem;
 
-    @media only screen and (max-width: 56.25em) {
-      width: 22rem;
-      border: 1px solid;
-      border-radius: 3px;
-      margin-left: -3.5rem;
-      margin-bottom: 1.5rem;
-    }
+    a {
+      font-size: 2vmax;
+      padding: 0.2rem 2rem;
+      border-radius: 5rem;
+      color: #fff;
+      background-color: $color-primary;
+      box-shadow: 0 0.2rem 0rem rgba(255, 140, 0, 0.7);
+      font-family: "Pacifico", cursive;
+      transition: transform 0.3s;
+      display: inline-block;
 
-    @media only screen and (max-width: 25em) {
-      width: 15rem;
-    }
+      &:hover {
+        transform: scale(1.05);
+      }
 
-    img {
-      filter: hue-rotate(20deg);
-      object-fit: cover;
+      &:active {
+        transform: scale(0.7);
+      }
     }
   }
 
-  &__btn {
-    font-size: 2.2vmax;
-    padding: 0 2rem;
-    border-radius: 5rem;
-    color: #fff;
-    border: none;
-    background-color: $color-primary;
-    box-shadow: 0 0.2rem 0rem rgba(255, 140, 0, 0.7);
-    margin-top: 1rem;
-    font-family: "Pacifico", cursive;
-    transition: transform 0.3s;
-    outline: none;
+  &__image {
+    margin-right: -10%;
 
-    @media only screen and (max-width: 56.25em) {
-      position: absolute;
-      bottom: -5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.3rem;
-    }
-
-    @media only screen and (max-width: 25em) {
-      bottom: 0;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-
-      @media only screen and (max-width: 56.25em) {
-        transform: translateX(-50%) scale(1.1);
-      }
-    }
-
-    &:active {
-      transform: scale(0.8);
-
-      @media only screen and (max-width: 56.25em) {
-        transform: translateX(-50%) scale(0.8);
-      }
+    @media only screen and (max-width: 650px) {
+      display: none;
     }
   }
 }

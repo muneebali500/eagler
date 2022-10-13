@@ -3,7 +3,11 @@
   background-color: $color-section-bacground-2;
 
   @media only screen and (max-width: 46.875em) {
-    padding: 6rem 6%;
+    padding: 3rem 6%;
+  }
+
+  @media only screen and (max-width: 27.5em) {
+    padding: 1.3rem 6%;
   }
 }
 

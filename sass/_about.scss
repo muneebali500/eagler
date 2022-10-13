@@ -4,6 +4,14 @@
   @include flex-center(row);
   background-color: $color-section-bacground-2;
   overflow: hidden;
+
+  @media only screen and (max-width: 40.625em) {
+    padding: 3rem 0;
+  }
+
+  @media only screen and (max-width: 27.5em) {
+    padding: 1.3rem 0;
+  }
 }
 
 .about {
@@ -34,7 +42,10 @@
 
     @media only screen and (max-width: 62.5em) {
       text-align: center;
-      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 40.625em) {
+      font-size: 2rem;
     }
 
     span {

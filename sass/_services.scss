@@ -1,8 +1,11 @@
 #services {
-  min-height: 100vh;
   background-color: $color-section-bacground-1;
   padding: 3rem 4vmax;
   overflow-y: hidden;
+
+  @media only screen and (max-width: 27.5em) {
+    padding: 1.3rem 4vmax;
+  }
 }
 
 .services {
@@ -28,6 +31,10 @@
     position: relative;
     opacity: 0;
     transform: translateY(30rem);
+
+    @media only screen and (max-width: 23.4375em) {
+      width: auto;
+    }
 
     &--2 {
       margin: 3rem 0;
@@ -83,6 +90,10 @@
     border-radius: 0.3rem;
     font-size: 1.1rem;
     text-align: center;
+
+    @media only screen and (max-width: 23.4em) {
+      padding: 0.8rem;
+    }
   }
 }
 

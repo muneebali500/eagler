@@ -1,144 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <script src="script.js" defer></script>
 
     <title>Eagler Home</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header id="header">
-        
+      <nav class="nav" data-nav-bar>
+        <div class="nav__content">
+          <div class="nav__logo">
+            <h2>Eagler</h2>
+          </div>
+          <div class="nav__items" data-nav-items>
+            <a href="#header" class="nav__link" data-nav-link>Home</a>
+            <a href="#about" class="nav__link" data-nav-link>About</a>
+            <a href="#services" class="nav__link" data-nav-link>Services</a>
+            <a href="#portfolio" class="nav__link" data-nav-link>Portfolio</a>
+            <a href="#contact" class="nav__link" data-nav-link>Contact</a>
+          </div>
 
-        <nav class="nav" data-nav-bar>
-        
-            <div class="nav__logo">
-                <h2>Eagler</h2>
-            </div>
-            <div class="nav__items" data-nav-items>
-                <a href="#header" class="nav__link" data-nav-link>Home</a>
-                <a href="#about" class="nav__link" data-nav-link>About</a>
-                <a href="#services" class="nav__link" data-nav-link>Services</a>
-                <a href="#portfolio" class="nav__link" data-nav-link>Portfolio</a>
-                <a href="#contact" class="nav__link" data-nav-link>Contact</a>
-            </div>
-
-            <div class="nav__btn" data-nav-btn>
-                <i class="fas fa-bars" data-nav-open></i>
-                <i class="fas fa-times" data-nav-close></i>
-            </div>
-                
-        </nav>
-
-        <div class="header__content">
-            <div class="header__text">
-                <h1 class="header__title"><i>D</i>esign the <i>F</i>uture <span>with <i>U</i>s</span></h1>
-                <!-- <p class="header__caption"></p> -->
-                <button class="header__btn"><a href="#contact">Come On</a></button>
-            </div>
-            <div class="header__image">
-                <img src="./img/headerimg5.png" alt="Hero Image" loading="lazy">
-            </div>        
+          <div class="nav__btn" data-nav-btn>
+            <i class="fas fa-bars" data-nav-open></i>
+            <i class="fas fa-times" data-nav-close></i>
+          </div>
         </div>
+      </nav>
 
-    </header>   <!-- Header ends here -->
+      <div class="header__content">
+        <div class="header__text">
+          <h1 class="header__title">
+            <i>D</i>esign the <i>F</i>uture <span>with <i>U</i>s</span>
+          </h1>
+          <!-- <p class="header__caption"></p> -->
+          <button class="header__btn"><a href="#contact">Come On</a></button>
+        </div>
+        <div class="header__image">
+          <img src="./img/headerimg5.png" alt="Hero Image" loading="lazy" />
+        </div>
+      </div>
+    </header>
+    <!-- Header ends here -->
 
     <main id="main-content">
+      <section id="about">
+        <div class="about__container">
+          <div class="about__image" data-about-image>
+            <img src="./img/img15.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="about__text" data-about-text>
+            <h2 class="about__title">About <span>U</span>s</h2>
+            <p class="section__para">
+              We introduce ourselves as the fastly growing and emerging
+              organization leading in the fields of Web Development, Graphic
+              designing, Website Maintenance, IT Solutions, and other services.
+              Established our business on 25th October 2019, we currently have
+              more than 25 happy clients asking for more. If you are considering
+              giving your website a new persona or desiring to design a logo to
+              give a new identity to your company or looking for a get ready
+              response to your networking issues then our gorgeous friends, you
+              are at the right place. We have a great team of highly dedicated
+              youngsters who are always trying to look out the box to provide
+              the best so that you can stand out from the mass
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About section ends here -->
 
-        <section id="about">
-            <div class="about__container">
-                <div class="about__image" data-about-image>
-                    <img src="./img/img15.jpg" alt="" loading="lazy">
-                </div>
-                <div class="about__text" data-about-text>
-                    <h2 class="about__title">About <span>U</span>s</h2>
-                    <p class="section__para">We introduce ourselves as the fastly growing and emerging organization leading in the fields of Web Development, Graphic designing, Website Maintenance, IT Solutions, and other services. Established our business on 25th October 2019, we currently have more than 25 happy clients asking for more. If you are considering giving your website a new persona or desiring to design a logo to give a new identity to your company or looking for a get ready response to your networking issues then our gorgeous friends, you are at the right place. We have a great team of highly dedicated youngsters who are always trying to look out the box to provide the best so that you can stand out from the mass</p>
-                </div>
-            </div>
-        </section> <!-- About section ends here -->
+      <section id="services">
+        <h2 class="section__title">Our <span>S</span>ervices</h2>
+        <p class="section__caption">
+          We provide the Best Services to our Valuable Clients
+        </p>
+        <div class="services__container">
+          <div class="services__box services__box--1" data-service-box>
+            <img
+              src="./img/icons/graphic-design.svg"
+              alt=""
+              class="services__img"
+              loading="lazy"
+            />
+            <p class="services__detail">
+              We consider designing an essential ingredient for any business.
+              Therefore, we have a team of highly creative professionals who are
+              very experienced in designing Logos, Brochures, Magazines,
+              Banners, Flyers, Packagings, etc..
+            </p>
+            <div class="services__name">Graphic Designing</div>
+          </div>
+          <div class="services__box services__box--2" data-service-box>
+            <img
+              src="./img/icons/webdevelopment1.svg"
+              alt=""
+              class="services__img"
+              loading="lazy"
+            />
+            <p class="services__detail">
+              We know that a smart and user-friendly web site wins prospective
+              clients for the company. The arrangement of the site's navigation,
+              text, and graphics all add to this experience. We make sure that
+              the users get all that and much more..
+            </p>
+            <div class="services__name">Web Development</div>
+          </div>
+          <div class="services__box services__box--3" data-service-box>
+            <img
+              src="./img/icons/maintenance.svg"
+              alt=""
+              class="services__img"
+              loading="lazy"
+            />
+            <p class="services__detail">
+              Maintenance is necessary for any website. Our maintenance services
+              include bug fixes, error checking, updating existing content,
+              adding new content, immediate response, telephone and email
+              support, data backup, and lots of other things..
+            </p>
+            <div class="services__name">Website Maintenance</div>
+          </div>
+        </div>
+      </section>
+      <!-- Services section ends here -->
 
-        <section id="services">
-            <h2 class="section__title">Our <span>S</span>ervices</h2>
-            <p class="section__caption">We provide the Best Services to our Valuable Clients</p>
-            <div class="services__container">
-                <div class="services__box services__box--1" data-service-box>
-                    <img src="./img/icons/graphic-design.svg" alt="" class="services__img" loading="lazy">
-                    <p class="services__detail">We consider designing an essential ingredient for any business. Therefore, we have a team of highly creative professionals who are very experienced in designing Logos, Brochures, Magazines, Banners, Flyers, Packagings, etc..</p>
-                    <div class="services__name">Graphic Designing</div>
-                </div>
-                <div class="services__box services__box--2" data-service-box>
-                    <img src="./img/icons/webdevelopment1.svg" alt="" class="services__img" loading="lazy">
-                    <p class="services__detail">We know that a smart and user-friendly web site wins prospective clients for the company. The arrangement of the site's navigation, text, and graphics all add to this experience. We make sure that the users get all that and much more..</p>
-                    <div class="services__name">Web Development</div>
-                </div>
-                <div class="services__box services__box--3" data-service-box>
-                    <img src="./img/icons/maintenance.svg" alt="" class="services__img" loading="lazy">
-                    <p class="services__detail">Maintenance is necessary for any website. Our maintenance services include bug fixes, error checking, updating existing content, adding new content, immediate response, telephone and email support, data backup, and lots of other things.. </p>
-                    <div class="services__name">Website Maintenance</div>
-                </div>
-            </div>
-        </section>  <!-- Services section ends here -->
+      <section id="portfolio">
+        <h2 class="section__title">Our <span>P</span>ortfolio</h2>
+        <p class="section__caption">
+          Let's take a Peak at some of our Artistry
+        </p>
+        <div class="portfolio__container">
+          <div class="portfolio__box portfolio__forms">
+            <span class="portfolio__title">Food Menu</span>
+            <img src="./img/menu.png" alt="Menu Page" loading="lazy" />
+          </div>
+          <div class="portfolio__box portfolio__forms">
+            <span class="portfolio__title">Testimonial</span>
+            <img
+              src="./img/Testimonial2.png"
+              alt="Testimonial"
+              loading="lazy"
+            />
+          </div>
+          <div class="portfolio__box portfolio__landingPage">
+            <span class="portfolio__title">Landing Page</span>
+            <img src="./img/header3.png" alt="Landing Page" loading="lazy" />
+          </div>
+          <div class="portfolio__box portfolio__testimonials">
+            <span class="portfolio__title">Skills Set</span>
+            <img src="./img/skills.png" alt="Skills Page" loading="lazy" />
+          </div>
+          <div class="portfolio__box portfolio__forms">
+            <span class="portfolio__title">SignUp Page</span>
+            <img src="./img/form2.png" alt="SignUp Form" loading="lazy" />
+          </div>
+          <div class="portfolio__box portfolio__forms">
+            <span class="portfolio__title">About Us</span>
+            <img src="./img/aboutus.png" alt="About Us" loading="lazy" />
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section ends here -->
 
-        <section id="portfolio">
-            <h2 class="section__title">Our <span>P</span>ortfolio</h2>
-            <p class="section__caption">Let's take a Peak at some of our Artistry</p>
-            <div class="portfolio__container">
-                <div class="portfolio__box portfolio__forms">
-                    <span class="portfolio__title">Food Menu</span>
-                    <img src="./img/menu.png" alt="Menu Page" loading="lazy">
-                </div>
-                <div class="portfolio__box portfolio__forms">
-                    <span class="portfolio__title">Testimonial</span>
-                    <img src="./img/Testimonial2.png" alt="Testimonial" loading="lazy">
-                </div>
-                <div class="portfolio__box portfolio__landingPage">
-                    <span class="portfolio__title">Landing Page</span>
-                    <img src="./img/header3.png" alt="Landing Page" loading="lazy">
-                </div>
-                <div class="portfolio__box portfolio__testimonials">
-                    <span class="portfolio__title">Skills Set</span>
-                    <img src="./img/skills.png" alt="Skills Page" loading="lazy">
-                </div>
-                <div class="portfolio__box portfolio__forms">
-                    <span class="portfolio__title">SignUp Page</span>
-                    <img src="./img/form2.png" alt="SignUp Form" loading="lazy">
-                </div>
-                <div class="portfolio__box portfolio__forms">
-                    <span class="portfolio__title">About Us</span>
-                    <img src="./img/aboutus.png" alt="About Us" loading="lazy">
-                </div>
-                
-                
-                
-        </section>  <!-- Portfolio section ends here -->
+      <section id="contact">
+        <h2 class="section__title"><span>C</span>ontact Us</h2>
+        <p class="section__caption">We are availble 24/7 to your service</p>
+        <div class="contact__container" data-address>
+          <div class="contact__address">
+            <img
+              src="./img/icons/warehouse.svg"
+              alt=""
+              class="contact__img"
+              loading="lazy"
+            />
+            <p class="contact__detail">
+              Plot#43, Street#16 <br />
+              Rauf Commercial Building <br />
+              Punjab Colony, Karachi
+            </p>
+          </div>
+          <div class="contact__address">
+            <img
+              src="./img/icons/email.svg"
+              alt=""
+              class="contact__img"
+              loading="lazy"
+            />
+            <p class="contact__detail">
+              info.eagler@gmail.com <br />
+              support.eagler@gmail.com
+            </p>
+          </div>
 
-        <section id="contact">
-            <h2 class="section__title"><span>C</span>ontact Us</h2>
-            <p class="section__caption">We are availble 24/7 to your service</p>
-            <div class="contact__container" data-address>
-                <div class="contact__address">
-                    <img src="./img/icons/warehouse.svg" alt="" class="contact__img" loading="lazy">
-                    <p class="contact__detail">Plot#43, Street#16 <br> Rauf Commercial Building <br> Punjab Colony, Karachi</p>
-                </div>
-                <div class="contact__address">
-                    <img src="./img/icons/email.svg" alt="" class="contact__img" loading="lazy">
-                    <p class="contact__detail">info.eagler@gmail.com <br> support.eagler@gmail.com
-                </div>
-                <div class="contact__address">
-                    <img src="./img/icons/customer-service.svg" alt="" class="contact__img" loading="lazy">
-                    <p class="contact__detail">(+92) 332-2040683 <br>(+92) 334-3763325</p>
-                </div>
-            </div>
-        </section>  <!-- Contact section ends here -->
+          <div class="contact__address">
+            <img
+              src="./img/icons/customer-service.svg"
+              alt=""
+              class="contact__img"
+              loading="lazy"
+            />
+            <p class="contact__detail">
+              (+92) 333-2148695 <br />(+92) 333-3562465
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section ends here -->
+    </main>
+    <!-- Main Container ends here.. -->
 
-    </main> <!-- Main Container ends here.. -->
-
-    <footer id="footer">Copyright by Eagler</footer>
-
-</body>
+    <footer id="footer">
+      Designed and Developed by Muneeb Ali 🙂. <br />
+      Contact @ muneebali500@gmail.com
+    </footer>
+  </body>
 </html>

@@ -33,12 +33,8 @@ function navBarAnimate() {
   let offset = window.pageYOffset;
   if (offset > 550) {
     navBar.classList.add(`navBg`);
-    navBtn.style.marginTop = `-1.7rem`;
-    navItems.style.top = `4rem`;
   } else {
     navBar.classList.remove(`navBg`);
-    navBtn.style.marginTop = `0`;
-    navItems.style.top = `6rem`;
   }
 }
 

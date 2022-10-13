@@ -3,6 +3,10 @@
   text-align: center;
   color: orange;
 
+  @media only screen and (max-width: 40.625em) {
+    font-size: 2rem;
+  }
+
   span {
     color: rgba(240, 0, 0, 1);
   }
@@ -13,4 +17,9 @@
   font-size: 1.4rem;
   margin-bottom: 4rem;
   margin-top: -0.5rem;
+
+  @media only screen and (max-width: 40.625em) {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
 }
